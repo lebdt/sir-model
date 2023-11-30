@@ -58,8 +58,11 @@ $$
 \begin{aligned}
 i_{t+1}-i_t &=\frac{\alpha \Delta t}{N} s_t i_t \\
 i_{t+1} &=i_t+\frac{\alpha \Delta t}{N} s_t i_t \\
-\boxed{i_{t+1} &=i_t\left(1+\frac{\alpha \Delta t}{N} s_t\right)}
 \end{aligned}
+$$
+
+$$
+\boxed{i_{t+1} &=i_t\left(1+\frac{\alpha \Delta t}{N} s_t\right)}
 $$
 
 **Suscetíves**
