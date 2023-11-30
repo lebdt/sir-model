@@ -56,9 +56,9 @@ $$
 
 $$
 \begin{aligned}
-i_{t+1}-i_t & =\frac{\alpha \Delta t}{N} s_t i_t \\
-i_{t+1} & =i_t+\frac{\alpha \Delta t}{N} s_t i_t \\
-\boxed{i_{t+1} & =i_t\left(1+\frac{\alpha \Delta t}{N} s_t\right)}
+i_{t+1}-i_t &=\frac{\alpha \Delta t}{N} s_t i_t \\
+i_{t+1} &=i_t+\frac{\alpha \Delta t}{N} s_t i_t \\
+\boxed{i_{t+1} &=i_t\left(1+\frac{\alpha \Delta t}{N} s_t\right)}
 \end{aligned}
 $$
 
@@ -109,7 +109,7 @@ $$\boxed{i(t)=N \frac{i_0}{i_0+e^{-\alpha t}\left(N-i_0\right)}}$$
 
 **Suscetíveis**
 
-$$ds &= -\frac{\alpha\,s\,i}{N} dt$$
+$$ds = -\frac{\alpha\,s\,i}{N} dt$$
 
 
 $$\boxed{s(t)=N \frac{s_0}{s_0+e^{\alpha t}\left(N-s_0\right)}} = N - i(t)$$
