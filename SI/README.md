@@ -1,6 +1,6 @@
 # Modelo SI
 
-Temos uma variável aleatória $X$ que pode assumir a condição $S$ ou $I$, suscetível ou infectado. E parametrizamos essas condições de acordo com uma variável que indica o tempo $t$, de forma mais simplista, um indivíduo $X$ no tempo $t$ está suscetível a infecção ($X_t = S$) ou está infectado ($X_t = I$).
+Temos uma variável aleatória $X$ que pode assumir a condição $S$ ou $I$, suscetível ou infectado. E parametrizamos essas condições de acordo com uma variável que indica o tempo $t$, de forma mais simplista, um indivíduo $X$ no tempo $t$ está suscetível a infecção ($X_{t} = S$) ou está infectado ($X_{t} = I$).
 
 ## Medidas/Inferências de Interesse
 
@@ -15,7 +15,7 @@ $$P(X_t = S | A) + P(X_t = I | A) = 1$$
 
 $$P(I_{t^\prime} | S_{t} A)$$
 
-onde I_{t^\prime} é equivalente a $X_{t^\prime} = I$, $t^\prime$ é um indicador do momento de transição que está entre $t$ e $t+1$ e $S_t$ equivale a $X_t = S$.
+onde $I_{t^\prime}$ é equivalente a $X_{t^\prime} = I$, $t^\prime$ é um indicador do momento de transição que está entre $t$ e $t+1$ e $S_t$ equivale a $X_{t} = S$.
 
 ## Premissa
 
@@ -53,6 +53,7 @@ $$
 ### Tempo $t$ como variável discreta
 
 **Infectados**
+
 $$
 \begin{aligned}
 i_{t+1}-i_t & =\frac{\alpha \Delta t}{N} s_t i_t \\
@@ -62,6 +63,7 @@ i_{t+1} & =i_t+\frac{\alpha \Delta t}{N} s_t i_t \\
 $$
 
 **Suscetíves**
+
 $$
 \begin{gathered}
 \frac{P\left(S_{t+1} \mid A\right)-P\left(S_t \mid A\right)}{P\left(S_t \mid A\right)}=-P\left(I_{t^{+}} \mid S_t A\right) \Longrightarrow-i_{t^{+}}=N\left(s_{t+1}-s_t\right)=N \Delta s \\
@@ -80,6 +82,7 @@ Primeiramente é preciso tratar a variação $\Delta\,t$ como infinitesimal, no 
 
 
 **Infectados**
+
 $$
 \begin{aligned}
 i_{t+1} - i_{t} &= \frac{\alpha\,\Delta\,t}{N}s_{t}\,i_{t}\\
@@ -105,9 +108,8 @@ $$\boxed{i(t)=N \frac{i_0}{i_0+e^{-\alpha t}\left(N-i_0\right)}}$$
 
 
 **Suscetíveis**
-$$
-ds &= -\frac{\alpha\,s\,i}{N} dt
-$$
+
+$$ds &= -\frac{\alpha\,s\,i}{N} dt$$
 
 
 $$\boxed{s(t)=N \frac{s_0}{s_0+e^{\alpha t}\left(N-s_0\right)}} = N - i(t)$$
