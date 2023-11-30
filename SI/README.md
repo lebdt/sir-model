@@ -71,11 +71,23 @@ s_{t+1}=s_t-\frac{\alpha \Delta t}{N} i_t s_t \\
 \end{gathered}
 $$
 
+![Modelo SI - Tempo Discreto - Output](SI_discrete_output.png)
+
 
 ### Tempo $t$ como variável contínua
 
+Primeiramente é preciso tratar a variação $\Delta\,t$ como infinitesimal, no limite indo a zero em cada um dos casos.
+
 
 **Infectados**
+$$
+\begin{aligned}
+i_{t+1} - i_{t} &= \frac{\alpha\,\Delta\,t}{N}s_{t}\,i_{t}\\
+di &= \frac{\alpha\,s\,i}{N} dt
+\end{aligned}
+$$
+
+
 $$
 \begin{aligned}
  \int_{i_0}^i\left(\frac{1}{N(N-i)}+\frac{1}{N i}\right) d i&=\frac{\alpha}{N} t \\
@@ -93,4 +105,12 @@ $$\boxed{i(t)=N \frac{i_0}{i_0+e^{-\alpha t}\left(N-i_0\right)}}$$
 
 
 **Suscetíveis**
+$$
+ds &= -\frac{\alpha\,s\,i}{N} dt
+$$
+
+
+$$\boxed{s(t)=N \frac{s_0}{s_0+e^{\alpha t}\left(N-s_0\right)}} = N - i(t)$$
+
+![Modelo SI - Tempo Contínuo - Output](SI_continuous_output.png)
 

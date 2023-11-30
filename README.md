@@ -11,9 +11,9 @@ Incrementando com mais um parâmetro de referência, os recuperados, temos o mod
 Este tipo de modelagem auxilia consideravelmente no tipo de informação poderia ser útil para incrementar o próprio modelo ou obter modelos melhores.
 
 
-- [SI/SI.md](Modelo SI)
+- [Modelo SI](SI/README.md)
 
-- [SIR/SIR.md](Modelo SIR)
+- [Modelo SIR](SIR/README.md)
 
 
 
