@@ -51,14 +51,16 @@ A probalidade do indivíduo estar recuperado no instante $t+1$ é a probabilidad
 
 $$P(R_{t+1}|A) = P(R_{t}|A) + P(I_{t} | A) P(R_{t^\prime} | I_{t} A)$$
 
-A probalidade do indivíduo estar suscetível no instante $t+1$ é pode ser definida por "não ('se infectar em $t+1$' ou  'estar infectado em $t$ e se recuperar em $t^\prime$')":
+A probalidade do indivíduo estar suscetível no instante $t+1$ pode ser definida por "não ('se infectar em $t+1$' ou  'estar infectado em $t$ e se recuperar em $t^\prime$')":
 
 
+$$
 \begin{aligned}
 P\left(S_{t+1} \mid A\right) & =1-\left[P\left(I_{t+1} \mid A\right)+P\left(I_{t} \mid A\right) P\left(R_{t^{+}} \mid I_{t} A\right)\right] \\
 & =1-P\left(I_{t} \mid A\right)+P\left(I_{t} \mid A\right) P\left(R_{t^{+}} \mid I_{t} A\right)-P\left(S_{t} \mid A\right) P\left(I_{t^{+}} \mid S_{t} A\right)-P\left(I_{t} \mid A\right) P\left(R_{t^{+}} \mid I_{t} A\right) \\
 & =P\left(S_{t} \mid A\right)-P\left(S_{t} \mid A\right) P\left(I_{t^{+}} \mid S_{t} A\right)
 \end{aligned}
+$$
 
 
 ## Parametrizações do modelo de transmissão
@@ -89,7 +91,7 @@ s_{t+1} & =s_{t}-s_{t} \frac{\alpha \Delta t i_{t}}{N} \\
 $$
 
 
-$$\boxed{s_{t+1} & =s_{t}\left(1-\frac{\alpha \Delta t}{N} i_{t}\right)}$$
+$$\boxed{s_{t+1} =s_{t}\left(1-\frac{\alpha \Delta t}{N} i_{t}\right)}$$
 
 
 **Infectados**
@@ -102,7 +104,7 @@ i_{t+1} & =i_{t}-i_{t} \gamma \Delta t+\frac{\alpha \Delta t i_{t}}{N} s_{t} \\
 \end{aligned}
 $$
 
-$$\boxed{i_{t+1} & =i_{t}\left(1-\gamma \Delta t+\frac{\alpha \Delta t}{N} s_{t}\right)}$$
+$$\boxed{i_{t+1} =i_{t}\left(1-\gamma \Delta t+\frac{\alpha \Delta t}{N} s_{t}\right)}$$
 
 
 **Recuperados**
@@ -114,7 +116,7 @@ N \cdot\left(\frac{r_{t+1}}{N}\right) & =N \cdot\left(\frac{r_{t}}{N}+\frac{i_{t
 \end{aligned}
 $$
 
-$$\boxed{r_{t+1} & =r_{t}+i_{t} \gamma \Delta t}$$
+$$\boxed{r_{t+1} =r_{t}+i_{t} \gamma \Delta t}$$
 
 
 ## Sistema de interesse
