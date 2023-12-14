@@ -50,7 +50,7 @@ fig, axs = plt.subplots(1, 3, constrained_layout=True, figsize=(9, 4))
 axs[0].set_ylabel("População", fontsize=14)
 axs[1].set_xlabel("Tempo", fontsize=14)
 
-for i in range(3):
+for i in range(len(alphas)):
     axs[i].plot(td, i_td(alphas[i]), "D-", ms=3.5, lw=1.5)
     axs[i].plot(td, s_td(alphas[i]), "*", ls='dotted', ms=3.5, lw=1)
     axs[i].set_title(r"$\alpha = " + f"{alphas[i]}$")

@@ -36,7 +36,7 @@ Com um único parâmetro $\alpha$, podemos parametrizar a transmissão com base 
 
 $$P(I_{t^\prime} | S_{t} A) = \alpha P(I_t | A) \, \Delta t$$
 
-De forma mais simplificada, considerando os indvíduos indistinguíveis entre si, podemos considerar $P(I_{t^\prime} |S_t A) = \frac{i_{t^\prime}}{s_t \, N}$ e $P(I_t | A) = \frac{i_t}{N}$ onde $N = s + i$ é a população total.
+De forma mais simplificada, considerando os indvíduos indistinguíveis entre si, podemos assumir $P(I_{t^\prime} |S_t A) = \frac{i_{t^\prime}}{s_t \, N}$ e $P(I_t | A) = \frac{i_t}{N}$ onde $N = s + i$ é a população total.
 
 $$
 \begin{gathered}
@@ -76,7 +76,7 @@ s_{t+1}=s_t-\frac{\alpha \Delta t}{N} i_t s_t \\
 \end{gathered}
 $$
 
-![Modelo SI - Tempo Discreto - Output](SI_discrete_output.png)
+![Modelo SI - Tempo Discreto - Output](output/SI_discrete_output.png)
 
 
 ### Tempo $t$ como variável contínua
@@ -117,5 +117,4 @@ $$ds = -\frac{\alpha\,s\,i}{N} dt$$
 
 $$\boxed{s(t)=N \frac{s_0}{s_0+e^{\alpha t}\left(N-s_0\right)}} = N - i(t)$$
 
-![Modelo SI - Tempo Contínuo - Output](SI_continuous_output.png)
-
+![Modelo SI - Tempo Contínuo - Output](output/SI_continuous_output.png)

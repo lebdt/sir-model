@@ -17,7 +17,7 @@ Este tipo de modelagem auxilia consideravelmente no tipo de informação poderia
 
 
 
-# Referências
+### Referências
 ```
 2020. CATICHA, Nestor - Probabilidades - Curso ministrado pela Universidade de São Paulo
 ```
