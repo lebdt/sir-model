@@ -18,6 +18,7 @@ Este tipo de modelagem auxilia consideravelmente no tipo de informação poderia
 
 
 ### Referências
-```
-2020. CATICHA, Nestor - Probabilidades - Curso ministrado pela Universidade de São Paulo
-```
+
+- ALLEN, L. J. Some discrete-time si, sir, and sis epidemic models. _Mathematical biosciences_ 124, 1 (1994),
+83–105.
+- CATICHA, N. - _Probabilidades_ - Curso ministrado pela Universidade de São Paulo (2020).
